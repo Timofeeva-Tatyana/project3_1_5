@@ -93,6 +93,7 @@
 
 <div class="container-fluid">
     <h1 class="text-center">Товары для вас</h1>
+    <a class="nav-link text-primary" aria-current="page" href="/items">Все товары</a>
     <div class="row-fluid row centered d-flex" >
         <div class="col-3 justify-content-center" th:each="item : ${bestRatingItems}">
                 <div th:replace="productCard::productCard(
@@ -112,6 +113,7 @@
 
 <div class="container-fluid">
     <h1 class="text-center" >Подборка магазинов</h1>
+    <a class="nav-link text-primary" aria-current="page" href="/shops">Все магазины</a>
     <div class="row-fluid row centered d-flex justify-content-center">
         <div class="col-3" th:each="shop : ${bestRatingShops}">
             <div class="card d-flex align-self-stretch">
